@@ -7,6 +7,20 @@
 {% block content %}
 <article class="container">
   <h1>Ships of the Golden Age of pirates</h1>
-  <p>Intro text here.</p>
+  <p>Learn about the iconic vessels pirates used to traverse the Seven Seas</p>
+  <div class="row">
+    {% for ship in pirates.ships %}
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-bg-primary border-info mb-4">
+        <div class="card-body">
+          <h5 class="card-title"> {{ship.ship_name}}</h5>
+          <h6> {{ship.captain}} </h6>
+          <p class="card-text">{{ship.blurb}}</p>
+          <a href="{{ship.source}}" target="_blank">-Click here to learn more-</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </article>
 {% endblock %}
