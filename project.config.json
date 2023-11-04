@@ -5,10 +5,17 @@
       "type": "doc",
       "name": "library"
     },
+
     {
       "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
       "type": "sheet",
       "name": "bookstores"
+    },
+
+    {
+      "fileId": "1ioAMi8F6IgdBu_gyjCoeeFgZGnw7GcLWSj2KFRYZcGM",
+      "type": "doc",
+      "name": "blog"
     },
     
     {
@@ -24,6 +31,12 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },{
+      "template": "bake-blog",
+      "data": "blog",
+      "array": "blogs",
+      "slug": "slug",
+      "path": "blog"
     }
   ]
 }
